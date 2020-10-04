@@ -1,0 +1,113 @@
+/* Portfoliol structural layout */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Header, .Main, .Footer {
+    display: flex;
+    justify-content: center;
+}
+.Header-wrapper, .Main-wrapper, .Footer-wrapper {
+    width: 50rem; /* Forcing content width to remain within 800px */
+}
+
+/* Default styling */
+body {
+    background-color: #fcfcfc;
+    color: #414d5c;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 5rem; /* To offset the fixed header */
+}
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+hr {
+    background-color: #414d5c;
+    margin: 3rem 0;
+    opacity: 0.25;
+}
+p {
+    line-height: 1.75rem;
+}
+a, a:visited {
+    color: #414d5c;
+}
+a:hover, a:active {
+    color: #2c8bff;
+}
+
+/* Header styling */
+.Header {
+    background-color: #303a46;
+    color: #fff;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.Header-wrapper {
+    display: flex;
+}
+.Header-title {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    align-self: center;
+    margin: 0;
+}
+.Header-subTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .75rem;
+    font-weight: 300;
+}
+.HeaderNav-wrapper {
+    display: flex;
+    padding: 0;
+    list-style: none; /* Remove the bullets */
+    margin: 0;
+}
+.HeaderNav {
+    align-self: center;
+    flex-grow: 0;
+}
+.HeaderNav-item {
+    margin-left: 1rem;
+}
+.HeaderNav-item a, .HeaderNav-item a:visited {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+.HeaderNav-item a:hover, .HeaderNav-item a:active {
+    color: #2c8bff;
+}
+
+/* Article styling */
+.Article-list li {
+    line-height: 1.75rem;
+}
+.Article-image {
+    border-radius: 50%;
+    height: 10rem;
+    float: right;
+    width: 10rem;
+}
+
+/* Specific Contact styling */
+#contact {
+    background-color: #f0f0f0;
+    padding: 3rem;
+    margin-top: 4rem;
+}
+#contact h2 {
+    margin-top: 0;
+}
+
+
+/* Footer styling */
+.Footer {
+    font-size: .75rem;
+    opacity: 0.5;
+    text-align: right;
+}
