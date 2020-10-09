@@ -116,7 +116,7 @@ a:hover, a:active {
     border-radius: 50%;
     width: 100%;
 }
-@media all and (min-width: 50rem) { /* Section desktop display */
+@media all and (min-width: 50rem) { /* Article desktop display */
     .Section {
         flex-direction: row;
         padding: 6rem 0 0 0;
@@ -135,6 +135,13 @@ a:hover, a:active {
     display: flex;
     flex-direction: column;
 }
+.Project-thumbnail {
+    margin-top: 1rem;
+}
+.Project-thumbnail img {
+    width: 100%;
+}
+
 @media all and (min-width: 50rem) { /* Project desktop display */
     .Project {
         flex-direction: row;
@@ -143,8 +150,12 @@ a:hover, a:active {
         flex-grow: 1;
         margin-right: 2rem;
     }
-    .Project-link {
+    .Project-thumbnail {
         align-self: center;
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 16rem;
+        margin-top: 0;
     }
 }
 
@@ -161,7 +172,7 @@ a:hover, a:active {
 }
 
 /* Button styling */
-.Button a, .Button a:visited {
+.Button, .Button:visited {
     display: inline-block;
     line-height: 1.75rem;
     border-radius: 0.1125rem;
@@ -170,8 +181,11 @@ a:hover, a:active {
     padding: 0.25rem 1rem;
     background-color: #303a46;
 }
-.Button a:hover, .Button a:active {
+.Button:hover, .Button:active {
     background-color: #2c8bff;
+}
+.Button + .Button {
+    margin-left: 0.5rem;
 }
 
 /* Form structure */
