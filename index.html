@@ -1,133 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Ryan Chase - Full Stack Developer Portfolio</title>
+    <!-- Normalize.css to override browser defaults -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts - Montserrat and Robot -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Ryan Chase - Full Stack Developer Portfolio</title>
-  <!-- Normalize.css to override browser defaults -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-  <!-- Google Fonts - Montserrat and Robot -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <!-- Stylesheet -->
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  <!-- Header -->
-  <header class="Header">
-    <div class="Header-content">
-      <h1 class="Header-title">Ryan Chase <span class="Header-subTitle">Full Stack Developer</span></h1>
-      <nav class="HeaderNav">
-        <ul class="HeaderNav-wrapper">
-          <li class="HeaderNav-item"><a href="#intro">Intro</a></li>
-          <li class="HeaderNav-item"><a href="#about">About</a></li>
-          <li class="HeaderNav-item"><a href="#portfolio">Portfolio</a></li>
-          <li class="HeaderNav-item"><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="Main">
-    <article class="Main-content">
-      <!-- Intro Section -->
-      <section id="intro" class="Section">
-        <div class="Section-content">
-          <h2 class="Section-title">Intro</h2>
-          <h3 class="Section-subTitle">Hey, I'm Ryan Chase!</h3>
-          <p>Portland, <abbr title="Oregon">OR</abbr> is my hometown, where I work as a <abbr title="User Experience">UX</abbr> Designer for a medical provider. Over the last decade, I have worked on multiple Agile scrum teams in both design and development roles. With my experience, I bring an extremely unique set of tools and knowledge to any team!</p>
-          <p>Outside of software development, I am an avid gamer and car enthusiast. On the weekends, you'll either find me playing some sort of game or going to a Cars and Coffee meet up. Here is a list of my passions outside of my family:</p>
-          <ul class="Section-list">
-            <li>Cars</li>
-            <li>Gaming</li>
-            <li>Traveling</li>
-            <li>Technology</li>
+  <body>
+    <!-- Header -->
+    <header class="Header">
+      <div class="Header-content">
+        <h1 class="Header-title">
+          Ryan Chase <span class="Header-subTitle">Full Stack Developer</span>
+        </h1>
+        <nav class="HeaderNav">
+          <ul class="HeaderNav-wrapper">
+            <li class="HeaderNav-item"><a href="#intro">Intro</a></li>
+            <li class="HeaderNav-item"><a href="#about">About</a></li>
+            <li class="HeaderNav-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="HeaderNav-item"><a href="#contact">Contact</a></li>
           </ul>
-        </div>
-        <img class="Section-image" src="./images/ryan-chase.png" alt="photo of Ryan in Astoria, Oregon" />
-      </section>
-      <!-- About Section -->
-      <section id="about" class="Section">
-        <div class="Section-content">
-          <h2 class="Section-title">About</h2>
-          <p>As someone with a diverse experience, I bring a distinct perspective to any feature discussion. My love for tech aides me by staying in tune with the current software trends while using the latest trending apps and software. I'm very passionate about usability and you shouldn’t be surprised if you hear me exclaim “That’s a bad user experience!”</p>
-          <p>Being able to talk shop and work side-by-side with developers has fostered a bond between design and development on the teams I've been a part of. I believe teams where everyone values the user's experience will ultimately build the best products. Whether you are gathering requirements or you're writing backend services, you have a direct impact on the users of your software.</p>
-          <p>Here are the skillsets and technologies that I can bring to your team:</p>
-          <ul class="Section-list">
-            <li><abbr title="Hypertext Markup Language">HTML</abbr></li>
-            <li><abbr title="Cascading Style Sheets">CSS</abbr></li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Redux</li>
-            <li>User Experience Design</li>
-          </ul>
-        </div>
-      </section>
-      <!-- Portfolio Section -->
-      <section id="portfolio" class="Section">
-        <div class="Section-content">
-          <h2 class="Section-title">Portfolio</h2>
-          <div class="Project Card">
-            <div class="Project-about">
-              <h3><a href="https://chasery.github.io/thinkful-portfolio" target="_blank">Thinkful Portfolio</a></h3>
-              <p>A project to showcase my personal design and development work in the Thinkful program currently utilizing <abbr title="Hypertext Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
-              <a class="Button" href="https://chasery.github.io/thinkful-portfolio" target="_blank">View Live</a>
-            </div>
-            <div class="Project-thumbnail">
-              <a href="https://chasery.github.io/thinkful-portfolio" target="_blank"><img src="./images/projects/thinkful-portfolio.png" alt="A snapshot of the view of my personal portfolio." /></a>
-            </div>
-          </div>
-          <!-- Commented out for now
-          <div class="Project Card">
-            <div class="Project-about">
-              <h3>Personal Portfolio</h3>
-              <p>My personal portfolio built with JavaScript, React, and Styled Components.</p>
-              <a class="Button" href="https://github.com/chasery/ryan-chase" target="_blank">View Live</a>
-            </div>
-            <div class="Project-thumbnail">
-              <img src="./images/projects/personal-portfolio.png" alt="A snapshot of the view when you first open my personal portfolio." />
-            </div>
-          </div>
-          -->
-        </div>
-      </section>
-      <!--- Contact Section -->
-      <section id="contact" class="Section">
-        <div class="Section-content">
-          <h2 class="Section-title full">Contact</h2>
-          <p>I am currently looking for an opportunity to strengthen my development skills with a focus on <strong>JavaScript</strong>, <strong>React</strong>, and <strong>Redux</strong>. Feel free to contact me at <a href="ryan@chasery.com">ryan@chasery.com</a> with any opportunities that you feel I would be a good match for.</p>
-          <h3 class="Section-subTitle">By Social Media</h3>
-          <p><a class="Button" href="https://www.linkedin.com/in/chasery/" target="_blank">LinkedIn</a><a class="Button" href="https://github.com/chasery" target="_blank">GitHub</a></p>
-          <h3 class="Section-subTitle">By E-mail</h3>
-          <form class="Form" action="https://formspree.io/f/xknpopoo" method="POST">
-            <ul class="Form-fieldGroup">
-              <li class="Form-field halfWidth">
-                <label class="Form-label" for="email">Your E-mail <span class="Form-required">*</span></label>
-                <input id="email" class="Form-input" type="email" name="_replyto" placeholder="joe@random.com" required>
-              </li>
-              <li class="Form-field halfWidth">
-                <label class="Form-label" for="name">Your Name</label>
-                <input id="name" class="Form-input" type="text" name="name" placeholder="Joe Random">
-              </li>
-              <li class="Form-field fullWidth">
-                <label class="Form-label" for="message">Your Message</label>
-                <textarea id="message" class="Form-input" name="message" placeholder="I love your work!"></textarea>
-              </li>
-              <li class="Form-field fullWidth">
-                <input class="Form-button" type="submit" value="Send">
-              </li>
+        </nav>
+      </div>
+    </header>
+    <main class="Main">
+      <article class="Main-content">
+        <!-- Intro Section -->
+        <section id="intro" class="Section">
+          <div class="Section-content">
+            <h2 class="Section-title">Intro</h2>
+            <h3 class="Section-subTitle">Hey, I'm Ryan Chase!</h3>
+            <p>
+              Portland, <abbr title="Oregon">OR</abbr> is my hometown, where I
+              work as a <abbr title="User Experience">UX</abbr> Designer for a
+              medical provider. Over the last decade, I have worked on multiple
+              Agile scrum teams in both design and development roles. With my
+              experience, I bring an extremely unique set of tools and knowledge
+              to any team!
+            </p>
+            <p>
+              Outside of software development, I am an avid gamer and car
+              enthusiast. On the weekends, you'll either find me playing some
+              sort of game or going to a Cars and Coffee meet up. Here is a list
+              of my passions outside of my family:
+            </p>
+            <ul class="Section-list">
+              <li>Cars</li>
+              <li>Gaming</li>
+              <li>Traveling</li>
+              <li>Technology</li>
             </ul>
-          </form>
-        </div>
-      </section>
-    </article>
-  </main>
-  <!-- Footer -->
-  <footer class="Footer">
-    <div class="Footer-content">
-      <p class="Footer-copyright">Copyright &copy; 2020 Ryan Chase</p>
-    </div>
-  </footer>
-</body>
-
+          </div>
+          <img
+            class="Section-image"
+            src="./images/ryan-chase.png"
+            alt="photo of Ryan in Astoria, Oregon"
+          />
+        </section>
+        <!-- About Section -->
+        <section id="about" class="Section">
+          <div class="Section-content">
+            <h2 class="Section-title">About</h2>
+            <p>
+              As someone with a diverse experience, I bring a distinct
+              perspective to any feature discussion. My love for tech aides me
+              by staying in tune with the current software trends while using
+              the latest trending apps and software. I'm very passionate about
+              usability and you shouldn’t be surprised if you hear me exclaim
+              “That’s a bad user experience!”
+            </p>
+            <p>
+              Being able to talk shop and work side-by-side with developers has
+              fostered a bond between design and development on the teams I've
+              been a part of. I believe teams where everyone values the user's
+              experience will ultimately build the best products. Whether you
+              are gathering requirements or you're writing backend services, you
+              have a direct impact on the users of your software.
+            </p>
+            <p>
+              Here are the skillsets and technologies that I can bring to your
+              team:
+            </p>
+            <ul class="Section-list">
+              <li><abbr title="Hypertext Markup Language">HTML</abbr></li>
+              <li><abbr title="Cascading Style Sheets">CSS</abbr></li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Redux</li>
+              <li>User Experience Design</li>
+            </ul>
+          </div>
+        </section>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="Section">
+          <div class="Section-content">
+            <h2 class="Section-title">Portfolio</h2>
+            <div class="Project Card">
+              <div class="Project-about">
+                <h3>
+                  <a
+                    href="https://chasery.github.io/thinkful-portfolio"
+                    target="_blank"
+                    >Thinkful Portfolio</a
+                  >
+                </h3>
+                <p>
+                  A project to showcase my personal design and development work
+                  in the Thinkful program currently utilizing
+                  <abbr title="Hypertext Markup Language">HTML</abbr> and
+                  <abbr title="Cascading Style Sheets">CSS</abbr>.
+                </p>
+                <a
+                  class="Button"
+                  href="https://chasery.github.io/thinkful-portfolio"
+                  target="_blank"
+                  >View Live</a
+                >
+              </div>
+              <div class="Project-thumbnail">
+                <a
+                  href="https://chasery.github.io/thinkful-portfolio"
+                  target="_blank"
+                  ><img
+                    src="./images/projects/thinkful-portfolio.png"
+                    alt="A snapshot of the view of my personal portfolio."
+                /></a>
+              </div>
+            </div>
+            <div class="Project Card">
+              <div class="Project-about">
+                <h3>
+                  <a href="https://chasery.github.io/spaced/" target="_blank"
+                    >Spaced</a
+                  >
+                </h3>
+                <p>
+                  A client-side app for viewing SpaceX's historical events and
+                  NASA's supporting image coverage of the event if available.
+                </p>
+                <a
+                  class="Button"
+                  href="https://chasery.github.io/spaced/"
+                  target="_blank"
+                  >View Live</a
+                >
+              </div>
+              <div class="Project-thumbnail">
+                <a href="https://chasery.github.io/spaced/" target="_blank"
+                  ><img
+                    src="./images/projects/spaced.png"
+                    alt="A client-side app for viewing SpaceX's historical events and NASA's supporting image coverage of the event if available."
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--- Contact Section -->
+        <section id="contact" class="Section">
+          <div class="Section-content">
+            <h2 class="Section-title full">Contact</h2>
+            <p>
+              I am currently looking for an opportunity to strengthen my
+              development skills with a focus on <strong>JavaScript</strong>,
+              <strong>React</strong>, and <strong>Redux</strong>. Feel free to
+              contact me at <a href="ryan@chasery.com">ryan@chasery.com</a> with
+              any opportunities that you feel I would be a good match for.
+            </p>
+            <h3 class="Section-subTitle">By Social Media</h3>
+            <p>
+              <a
+                class="Button"
+                href="https://www.linkedin.com/in/chasery/"
+                target="_blank"
+                >LinkedIn</a
+              ><a
+                class="Button"
+                href="https://github.com/chasery"
+                target="_blank"
+                >GitHub</a
+              >
+            </p>
+            <h3 class="Section-subTitle">By E-mail</h3>
+            <form
+              class="Form"
+              action="https://formspree.io/f/xknpopoo"
+              method="POST"
+            >
+              <ul class="Form-fieldGroup">
+                <li class="Form-field halfWidth">
+                  <label class="Form-label" for="email"
+                    >Your E-mail <span class="Form-required">*</span></label
+                  >
+                  <input
+                    id="email"
+                    class="Form-input"
+                    type="email"
+                    name="_replyto"
+                    placeholder="joe@random.com"
+                    required
+                  />
+                </li>
+                <li class="Form-field halfWidth">
+                  <label class="Form-label" for="name">Your Name</label>
+                  <input
+                    id="name"
+                    class="Form-input"
+                    type="text"
+                    name="name"
+                    placeholder="Joe Random"
+                  />
+                </li>
+                <li class="Form-field fullWidth">
+                  <label class="Form-label" for="message">Your Message</label>
+                  <textarea
+                    id="message"
+                    class="Form-input"
+                    name="message"
+                    placeholder="I love your work!"
+                  ></textarea>
+                </li>
+                <li class="Form-field fullWidth">
+                  <input class="Form-button" type="submit" value="Send" />
+                </li>
+              </ul>
+            </form>
+          </div>
+        </section>
+      </article>
+    </main>
+    <!-- Footer -->
+    <footer class="Footer">
+      <div class="Footer-content">
+        <p class="Footer-copyright">Copyright &copy; 2020 Ryan Chase</p>
+      </div>
+    </footer>
+  </body>
 </html>
